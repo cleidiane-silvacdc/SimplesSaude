@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simples Saúde</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="topo">
+
+        <div class="logo-sistema">
+
+            <img
+                src="imagens/logo-simples-saude.png"
+                alt="Simples Saúde"
+            >
+
+            <div class="texto-logo">
+                <h1>Simples Saúde</h1>
+                <p>Portal de Acompanhamento de Exames SUS</p>
+            </div>
+
+        </div>
+
+        <div class="logo-prefeitura">
+
+            <img
+                src="imagens/logo-recife.png"
+                alt="Prefeitura do Recife"
+            >
+
+        </div>
+
+    </div>
+
+</header>
+
+<nav>
+
+    <ul>
+        <li>🏠 Início</li>
+        <li>📋 Consultar Exames</li>
+        <li>📅 Agendamentos</li>
+        <li>🏥 Unidades</li>
+        <li>📞 Contato</li>
+    </ul>
+
+</nav>
+
+<div class="container">
+
+    <div class="banner">
+
+        <h2>Bem-vindo ao Simples Saúde</h2>
+
+        <p>
+            Consulte seus exames solicitados pelo SUS de forma rápida,
+            segura e transparente.
+        </p>
+
+    </div>
+
+    <div class="informacoes">
+
+        <div class="info-card">
+            <h4>📋 Consulta Online</h4>
+            <p>Acompanhe seus exames pendentes.</p>
+        </div>
+
+        <div class="info-card">
+            <h4>⏱ Atualização</h4>
+            <p>Status atualizado diariamente.</p>
+        </div>
+
+        <div class="info-card">
+            <h4>🏥 Rede SUS</h4>
+            <p>Integração com unidades municipais.</p>
+        </div>
+
+    </div>
+
+    <div class="consulta-box">
+
+        <h2>Consultar Exames</h2>
+
+        <input
+            type="text"
+            id="cpf"
+            placeholder="Digite seu CPF">
+
+        <button onclick="consultarExame()">
+            Consultar
+        </button>
+
+    </div>
+
+    <div class="cards">
+
+        <div class="card azul">
+            <h3 id="total">0</h3>
+            <p>Total de Exames</p>
+        </div>
+
+        <div class="card verde">
+            <h3 id="agendados">0</h3>
+            <p>Agendados</p>
+        </div>
+
+        <div class="card laranja">
+            <h3 id="pendentes">0</h3>
+            <p>Pendentes</p>
+        </div>
+
+    </div>
+
+    <div id="resultado"></div>
+
+</div>
+
+<footer>
+
+    <p>
+        Simples Saúde © 2026
+    </p>
+
+    <p>
+        Prefeitura do Recife | Secretaria de Saúde
+    </p>
+
+    <p>
+        Sistema acadêmico demonstrativo
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

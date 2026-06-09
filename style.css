@@ -1,0 +1,364 @@
+/* ==========================
+   CONFIGURAÇÕES GERAIS
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+}
+
+/* ==========================
+   CABEÇALHO
+========================== */
+
+header{
+    background:linear-gradient(90deg,#005ca9,#0077d9);
+    color:white;
+    padding:20px 40px;
+    box-shadow:0 2px 10px rgba(0,0,0,.15);
+}
+
+.topo{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/* ==========================
+   LOGO SIMPLES SAÚDE
+========================== */
+
+.logo-sistema{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.logo-sistema img{
+    width:85px;
+    height:85px;
+    object-fit:contain;
+}
+
+.texto-logo h1{
+    font-size:32px;
+    margin-bottom:5px;
+}
+
+.texto-logo p{
+    font-size:15px;
+    opacity:.95;
+}
+
+/* ==========================
+   LOGO PREFEITURA
+========================== */
+
+.logo-prefeitura img{
+    max-width:220px;
+    max-height:90px;
+    width:auto;
+    height:auto;
+    background:white;
+    padding:8px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+
+/* ==========================
+   MENU
+========================== */
+
+nav{
+    background:#004a86;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+}
+
+nav li{
+    color:white;
+    padding:15px 25px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+nav li:hover{
+    background:#0069c2;
+}
+
+/* ==========================
+   CONTAINER
+========================== */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:25px auto;
+}
+
+/* ==========================
+   BANNER
+========================== */
+
+.banner{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    margin-bottom:20px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.banner h2{
+    color:#005ca9;
+    margin-bottom:10px;
+}
+
+.banner p{
+    color:#555;
+}
+
+/* ==========================
+   CARDS INFORMATIVOS
+========================== */
+
+.informacoes{
+    display:flex;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.info-card{
+    flex:1;
+    background:white;
+    padding:20px;
+    border-left:6px solid #005ca9;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+.info-card h4{
+    margin-bottom:10px;
+    color:#005ca9;
+}
+
+/* ==========================
+   CONSULTA CPF
+========================== */
+
+.consulta-box{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:20px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.consulta-box h2{
+    color:#005ca9;
+    margin-bottom:15px;
+}
+
+input{
+    width:70%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:15px;
+}
+
+button{
+    padding:12px 25px;
+    border:none;
+    border-radius:6px;
+    background:#005ca9;
+    color:white;
+    cursor:pointer;
+    font-size:15px;
+    transition:.3s;
+}
+
+button:hover{
+    background:#00437a;
+}
+
+/* ==========================
+   CARDS DE INDICADORES
+========================== */
+
+.cards{
+    display:flex;
+    gap:15px;
+    margin-bottom:25px;
+}
+
+.card{
+    flex:1;
+    color:white;
+    text-align:center;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+
+.card h3{
+    font-size:32px;
+    margin-bottom:5px;
+}
+
+.azul{
+    background:#0d6efd;
+}
+
+.verde{
+    background:#198754;
+}
+
+.laranja{
+    background:#fd7e14;
+}
+
+/* ==========================
+   TABELA
+========================== */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+th{
+    background:#005ca9;
+    color:white;
+    padding:15px;
+    text-align:center;
+}
+
+td{
+    padding:14px;
+    border-bottom:1px solid #ddd;
+    text-align:center;
+}
+
+tr:hover{
+    background:#f5f9ff;
+}
+
+/* ==========================
+   STATUS
+========================== */
+
+.agendado{
+    color:#198754;
+    font-weight:bold;
+}
+
+.analise{
+    color:#0d6efd;
+    font-weight:bold;
+}
+
+.pendente{
+    color:#fd7e14;
+    font-weight:bold;
+}
+
+/* ==========================
+   MENSAGEM DE ERRO
+========================== */
+
+.naoencontrado{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    color:#dc3545;
+    font-weight:bold;
+    text-align:center;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+/* ==========================
+   RODAPÉ
+========================== */
+
+footer{
+    margin-top:40px;
+    background:#005ca9;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+footer p{
+    margin:5px 0;
+}
+
+/* ==========================
+   RESPONSIVO
+========================== */
+
+@media(max-width:768px){
+
+    .topo{
+        flex-direction:column;
+        text-align:center;
+        gap:20px;
+    }
+
+    .logo-sistema{
+        justify-content:center;
+    }
+
+    .logo-sistema img{
+        width:70px;
+        height:70px;
+    }
+
+    .texto-logo h1{
+        font-size:24px;
+    }
+
+    .logo-prefeitura img{
+        max-width:160px;
+        max-height:70px;
+    }
+
+    .informacoes{
+        flex-direction:column;
+    }
+
+    .cards{
+        flex-direction:column;
+    }
+
+    input{
+        width:100%;
+        margin-bottom:10px;
+    }
+
+    button{
+        width:100%;
+    }
+
+    nav ul{
+        flex-direction:column;
+    }
+
+    nav li{
+        text-align:center;
+    }
+}
